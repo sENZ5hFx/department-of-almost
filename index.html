@@ -5,47 +5,118 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Department of Almost</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
     <header>
-      <p class="eyebrow">FOR IMMEDIATE RELEASE</p>
+      <p class="eyebrow">The Department of Almost</p>
+      <p class="sub-eyebrow">A Division of What Could Have Been, LLC.</p>
     </header>
 
     <main>
-      <h1>THE DEPARTMENT<br>OF ALMOST</h1>
-      <p class="division">A Division of What Could Have Been, LLC.</p>
+      <h1>Products for the life<br>you keep almost living.</h1>
+      <p class="intro">We make real objects for the things no one else will say out loud. Beautiful, slightly mean, and exactly accurate.</p>
 
-      <div class="release">
-        <p class="dateline">— The Department of Almost announced today the completion of its acquisition of an unnamed emotional infrastructure company, effective immediately.</p>
-        <p>The terms of the deal were not disclosed. The acquiree was not aware it was for sale. Operations begin at once.</p>
-        <p>The Department of Almost operates in the gap between who you are and who you keep almost becoming. Products will be available shortly. The site will open when it is ready. We have always been here.</p>
-        <p class="signed">— Office of the Almost, Internal Communications</p>
-      </div>
+      <div class="catalog">
 
-      <div class="subscribe">
-        <p class="subscribe-label">Be notified when Drop 001 opens.</p>
-        <form class="subscribe-form" onsubmit="handleSubmit(event)">
-          <input type="email" placeholder="your@email.com" required />
-          <button type="submit">NOTIFY ME</button>
-        </form>
-        <p class="disclaimer" id="confirm" style="display:none;">You are on the list. We were already expecting you.</p>
+        <a href="product/villain-era.html" class="product-card">
+          <span class="drop-num">001</span>
+          <div>
+            <h2>The Villain Era Starter Kit</h2>
+            <p>Everything you need to finally stop being so reasonable.</p>
+          </div>
+          <span class="price">$47</span>
+        </a>
+
+        <a href="product/the-boundary.html" class="product-card">
+          <span class="drop-num">002</span>
+          <div>
+            <h2>The Boundary</h2>
+            <p>A matte black brick. Engraved: THIS FAR.</p>
+          </div>
+          <span class="price">$89</span>
+        </a>
+
+        <a href="product/ick-jar.html" class="product-card">
+          <span class="drop-num">003</span>
+          <div>
+            <h2>The Ick Jar</h2>
+            <p>Document your dealbreakers in real time.</p>
+          </div>
+          <span class="price">$65</span>
+        </a>
+
+        <a href="product/apology-owed.html" class="product-card">
+          <span class="drop-num">004</span>
+          <div>
+            <h2>The Apology You're Still Owed</h2>
+            <p>Stop waiting. We wrote it for them.</p>
+          </div>
+          <span class="price">$55</span>
+        </a>
+
+        <a href="product/roman-empire.html" class="product-card">
+          <span class="drop-num">005</span>
+          <div>
+            <h2>The Roman Empire</h2>
+            <p>The thing you think about more than you'd admit.</p>
+          </div>
+          <span class="price">$38</span>
+        </a>
+
+        <a href="product/soft-launch.html" class="product-card">
+          <span class="drop-num">006</span>
+          <div>
+            <h2>The Soft Launch</h2>
+            <p>An empty box. You've been ready.</p>
+          </div>
+          <span class="price">$29</span>
+        </a>
+
+        <a href="product/main-character-tax.html" class="product-card">
+          <span class="drop-num">007</span>
+          <div>
+            <h2>The Main Character Tax</h2>
+            <p>$3/month. You get nothing. You already know why.</p>
+          </div>
+          <span class="price">$3/mo</span>
+        </a>
+
+        <a href="product/red-flag-collection.html" class="product-card">
+          <span class="drop-num">008</span>
+          <div>
+            <h2>The Red Flag Collection</h2>
+            <p>5 actual red flags. Mounted on gold stands. You know what these are for.</p>
+          </div>
+          <span class="price">$75</span>
+        </a>
+
+        <a href="product/note-you-shouldve-left.html" class="product-card">
+          <span class="drop-num">009</span>
+          <div>
+            <h2>The Note You Should've Left</h2>
+            <p>20 cards for the things you were too polite to say.</p>
+          </div>
+          <span class="price">$35</span>
+        </a>
+
+        <a href="product/eras-tour.html" class="product-card featured">
+          <span class="drop-num">010</span>
+          <div>
+            <h2>The Eras Tour (Personal Edition)</h2>
+            <p>A timeline of every version of you that had to die so this one could exist.</p>
+          </div>
+          <span class="price">$48</span>
+        </a>
+
       </div>
     </main>
 
     <footer>
-      <p>Est. Now. &nbsp;&middot;&nbsp; Discontinued Eventually.</p>
+      <p>Est. Now.&nbsp;&middot;&nbsp;Discontinued Eventually.&nbsp;&middot;&nbsp;<a href="mailto:almost@departmentofalmst.com">almost@departmentofalmst.com</a></p>
     </footer>
   </div>
-
-  <script>
-    function handleSubmit(e) {
-      e.preventDefault();
-      document.getElementById('confirm').style.display = 'block';
-      e.target.style.display = 'none';
-    }
-  </script>
 </body>
 </html>
