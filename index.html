@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Department of Almost</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <p class="eyebrow">FOR IMMEDIATE RELEASE</p>
+    </header>
+
+    <main>
+      <h1>THE DEPARTMENT<br>OF ALMOST</h1>
+      <p class="division">A Division of What Could Have Been, LLC.</p>
+
+      <div class="release">
+        <p class="dateline">— The Department of Almost announced today the completion of its acquisition of an unnamed emotional infrastructure company, effective immediately.</p>
+        <p>The terms of the deal were not disclosed. The acquiree was not aware it was for sale. Operations begin at once.</p>
+        <p>The Department of Almost operates in the gap between who you are and who you keep almost becoming. Products will be available shortly. The site will open when it is ready. We have always been here.</p>
+        <p class="signed">— Office of the Almost, Internal Communications</p>
+      </div>
+
+      <div class="subscribe">
+        <p class="subscribe-label">Be notified when Drop 001 opens.</p>
+        <form class="subscribe-form" onsubmit="handleSubmit(event)">
+          <input type="email" placeholder="your@email.com" required />
+          <button type="submit">NOTIFY ME</button>
+        </form>
+        <p class="disclaimer" id="confirm" style="display:none;">You are on the list. We were already expecting you.</p>
+      </div>
+    </main>
+
+    <footer>
+      <p>Est. Now. &nbsp;&middot;&nbsp; Discontinued Eventually.</p>
+    </footer>
+  </div>
+
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      document.getElementById('confirm').style.display = 'block';
+      e.target.style.display = 'none';
+    }
+  </script>
+</body>
+</html>

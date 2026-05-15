@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Drop 001 — The Delay Lamp | The Department of Almost</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .product-header { margin-bottom: 16px; }
+    .drop-label { font-size: 10px; letter-spacing: 0.25em; color: var(--provisional-gold); text-transform: uppercase; margin-bottom: 24px; display: block; }
+    .product-title { font-family: 'Playfair Display', serif; font-size: clamp(32px, 6vw, 56px); font-weight: 700; line-height: 1.1; margin-bottom: 8px; }
+    .product-tagline { font-size: 14px; color: var(--unfinished-grey); font-style: italic; margin-bottom: 48px; }
+    .product-body p { font-size: 15px; line-height: 1.9; margin-bottom: 20px; }
+    .product-meta { margin: 48px 0; border-top: 1px solid #2a2a2a; border-bottom: 1px solid #2a2a2a; padding: 24px 0; }
+    .meta-row { display: flex; justify-content: space-between; font-size: 12px; letter-spacing: 0.1em; padding: 8px 0; border-bottom: 1px solid #1f1f1f; }
+    .meta-row:last-child { border-bottom: none; }
+    .meta-label { color: var(--unfinished-grey); text-transform: uppercase; }
+    .meta-value { color: var(--not-quite-white); }
+    .add-to-cart { width: 100%; background: transparent; border: 1px solid var(--provisional-gold); color: var(--provisional-gold); padding: 16px; font-family: 'Inter', sans-serif; font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; cursor: pointer; transition: all 0.2s; margin-top: 32px; }
+    .add-to-cart:hover { background: var(--provisional-gold); color: var(--almost-black); }
+    .cart-note { font-size: 11px; color: #444; letter-spacing: 0.08em; margin-top: 12px; text-align: center; }
+    .nav-back { font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--unfinished-grey); text-decoration: none; display: block; margin-bottom: 48px; }
+    .nav-back:hover { color: var(--provisional-gold); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="../index.html" class="nav-back">&larr; The Department</a>
+    <span class="drop-label">Drop 001</span>
+    <h1 class="product-title">The Delay Lamp</h1>
+    <p class="product-tagline">"Patented inaction technology."</p>
+
+    <div class="product-body">
+      <p>The Delay Lamp activates 47 seconds after the room goes still. There is no switch. There is no app. There is no voice command.</p>
+      <p>It was designed to address a specific problem: you have been trying to make something happen. This lamp is for after you stop.</p>
+      <p>Some things require your absence. The Delay Lamp simply makes this visible.</p>
+      <p>Ships in a matte black box. Inside lid: <em>"It was always going to work. You just had to stop."</em></p>
+    </div>
+
+    <div class="product-meta">
+      <div class="meta-row"><span class="meta-label">Price</span><span class="meta-value">$247</span></div>
+      <div class="meta-row"><span class="meta-label">Ships</span><span class="meta-value">6&ndash;8 weeks, conditions permitting</span></div>
+      <div class="meta-row"><span class="meta-label">Switch</span><span class="meta-value">None</span></div>
+      <div class="meta-row"><span class="meta-label">Activation</span><span class="meta-value">47 seconds of stillness</span></div>
+      <div class="meta-row"><span class="meta-label">Units</span><span class="meta-value">Ongoing. No urgency. That's the point.</span></div>
+    </div>
+
+    <button class="add-to-cart" id="cartBtn" onclick="addToCart()">Add to Cart</button>
+    <p class="cart-note" id="cartNote">Processing takes 47 seconds.</p>
+
+  </div>
+  <script>
+    let clicked = false;
+    function addToCart() {
+      if (clicked) return;
+      clicked = true;
+      const btn = document.getElementById('cartBtn');
+      const note = document.getElementById('cartNote');
+      btn.textContent = 'Processing...';
+      btn.style.opacity = '0.5';
+      btn.style.cursor = 'default';
+      note.textContent = 'Please wait. Some things cannot be rushed.';
+      note.style.color = 'var(--provisional-gold)';
+      setTimeout(() => {
+        btn.textContent = 'Added. Eventually.';
+        btn.style.opacity = '1';
+        note.textContent = 'You will be notified when it is time.';
+      }, 47000);
+    }
+  </script>
+</body>
+</html>
