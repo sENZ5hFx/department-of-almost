@@ -37,6 +37,15 @@ header {
   color: var(--not-quite-white);
 }
 
+.eyebrow a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.eyebrow a:hover {
+  color: var(--provisional-gold);
+}
+
 .sub-eyebrow {
   font-size: 10px;
   letter-spacing: 0.15em;
@@ -145,7 +154,12 @@ footer a:hover {
   color: var(--provisional-gold);
 }
 
-/* Product page styles */
+/* ── Product Page ── */
+
+.product-page {
+  max-width: 600px;
+}
+
 .nav-back {
   font-size: 11px;
   letter-spacing: 0.15em;
@@ -165,6 +179,77 @@ footer a:hover {
   text-transform: uppercase;
   display: block;
   margin-bottom: 16px;
+}
+
+.product-page h1 {
+  margin-bottom: 12px;
+}
+
+.product-price {
+  font-size: 13px;
+  color: var(--provisional-gold);
+  letter-spacing: 0.15em;
+  margin-bottom: 28px;
+}
+
+.product-description {
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--unfinished-grey);
+  font-style: italic;
+  margin-bottom: 48px;
+  max-width: 520px;
+}
+
+.product-contents {
+  border-top: 1px solid #2a2a2a;
+  border-bottom: 1px solid #2a2a2a;
+  padding: 28px 0;
+  margin-bottom: 36px;
+}
+
+.contents-label {
+  font-size: 10px;
+  letter-spacing: 0.25em;
+  color: var(--unfinished-grey);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.product-contents ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.product-contents li {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--not-quite-white);
+  padding-left: 16px;
+  position: relative;
+}
+
+.product-contents li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--provisional-gold);
+}
+
+.product-contents em {
+  color: var(--provisional-gold);
+  font-style: italic;
+}
+
+.product-note {
+  font-size: 14px;
+  line-height: 1.9;
+  color: var(--unfinished-grey);
+  max-width: 480px;
+  margin-bottom: 8px;
 }
 
 .product-title {
@@ -226,6 +311,7 @@ footer a:hover {
   display: block;
 }
 .add-to-cart:hover { background: var(--provisional-gold); color: var(--almost-black); }
+.add-to-cart:disabled { opacity: 0.5; cursor: default; background: transparent; color: var(--unfinished-grey); border-color: #333; }
 
 .cart-note {
   font-size: 11px;
