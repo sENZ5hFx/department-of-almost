@@ -3,42 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Drop 009 — The Note You Should've Left</title>
+  <title>009 — The Note You Should've Left | The Department of Almost</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
   <div class="container">
-    <a href="../index.html" class="nav-back">&larr; All Products</a>
-    <span class="drop-label">Drop 009</span>
-    <h1 class="product-title">The Note You<br>Should've Left</h1>
-    <p class="product-tagline">20 cards for the things you were too polite to say. You weren't too polite. You were just tired.</p>
-
-    <div class="product-body">
-      <p>A set of 20 pre-written cards for every situation you walked away from without saying the thing that needed saying.</p>
-      <p>Selected cards from the set:</p>
-      <p style="color: var(--unfinished-grey); font-style: italic; font-size: 13px; line-height: 2.4;">
-        &ldquo;Your music was too loud and I was too tired to say so.&rdquo;<br>
-        &ldquo;You were unkind to the server.&rdquo;<br>
-        &ldquo;I liked you more before I knew you better.&rdquo;<br>
-        &ldquo;You said you'd be five minutes. It was forty.&rdquo;<br>
-        &ldquo;You interrupted me four times. I counted.&rdquo;<br>
-        &ldquo;This meeting could have been a text. You knew that.&rdquo;<br>
-        &ldquo;You took credit for something that wasn't yours.&rdquo;<br>
-        &ldquo;I didn't say anything because I didn't think it would help. I was right. This is for me.&rdquo;
-      </p>
-    </div>
-
-    <div class="product-meta">
-      <div class="meta-row"><span class="meta-label">Price</span><span class="meta-value">$35</span></div>
-      <div class="meta-row"><span class="meta-label">Cards</span><span class="meta-value">20 pre-written, 5 blank</span></div>
-      <div class="meta-row"><span class="meta-label">Tone</span><span class="meta-value">Polite. Devastatingly accurate.</span></div>
-      <div class="meta-row"><span class="meta-label">Use</span><span class="meta-value">Leave them. Or don't. Either way.</span></div>
-    </div>
-
-    <button class="add-to-cart" onclick="this.textContent='Added.'; this.style.background='var(--provisional-gold)'; this.style.color='var(--almost-black)';">Add to Cart</button>
-    <p class="cart-note">5 blank cards included. For the situations we haven't named yet.</p>
+    <header>
+      <p class="eyebrow"><a href="../index.html">The Department of Almost</a></p>
+      <p class="sub-eyebrow">Drop 009</p>
+    </header>
+    <main class="product-page">
+      <p class="drop-label">009</p>
+      <h1>The Note You<br>Should've Left</h1>
+      <p class="product-price">$35</p>
+      <p class="product-description">20 cards for the things you were too polite to say.</p>
+      <div class="product-contents">
+        <p class="contents-label">What's Inside</p>
+        <ul>
+          <li>20 letterpress cards, cream stock, gold edge.</li>
+          <li>Pre-written. Each card covers a different situation you already recognize.</li>
+          <li>Titles include: <em>"What I Actually Meant," "The Part I Skipped," "This Is the Real Goodbye," "I Needed You to Know This."</em></li>
+          <li>Envelopes included. Whether you send them is entirely your business.</li>
+        </ul>
+      </div>
+      <p class="product-note">For the words that didn't come out right, or at all, or ever. We finished them.</p>
+      <button class="add-to-cart" onclick="this.textContent='Added.'; this.disabled=true;">Add to Cart — $35</button>
+    </main>
+    <footer>
+      <p>Est. Now.&nbsp;&middot;&nbsp;Discontinued Eventually.&nbsp;&middot;&nbsp;<a href="mailto:almost@departmentofalmst.com">almost@departmentofalmst.com</a></p>
+    </footer>
   </div>
 </body>
 </html>

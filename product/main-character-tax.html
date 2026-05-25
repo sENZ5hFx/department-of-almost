@@ -3,34 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Drop 007 — The Main Character Tax</title>
+  <title>007 — The Main Character Tax | The Department of Almost</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
   <div class="container">
-    <a href="../index.html" class="nav-back">&larr; All Products</a>
-    <span class="drop-label">Drop 007</span>
-    <h1 class="product-title">The Main<br>Character Tax</h1>
-    <p class="product-tagline">A recurring charge for living like you're the protagonist.</p>
-
-    <div class="product-body">
-      <p>$3 per month. You get nothing.</p>
-      <p>Once per billing cycle, the charge appears on your statement as: <code style="background:#222; padding: 2px 8px; font-size: 13px; letter-spacing: 0.05em;">MAIN CHARACTER FEE — DEPT. OF ALMOST</code></p>
-      <p>That's the product. The charge. The line item. The monthly reminder that you are, in fact, the main character, and main characters have overhead.</p>
-      <p>You can cancel anytime. Most people don't.</p>
-    </div>
-
-    <div class="product-meta">
-      <div class="meta-row"><span class="meta-label">Price</span><span class="meta-value">$3 / month</span></div>
-      <div class="meta-row"><span class="meta-label">What you receive</span><span class="meta-value">Nothing physical</span></div>
-      <div class="meta-row"><span class="meta-label">What appears on statement</span><span class="meta-value">MAIN CHARACTER FEE — DEPT. OF ALMOST</span></div>
-      <div class="meta-row"><span class="meta-label">Cancellable</span><span class="meta-value">Yes. Most people don't.</span></div>
-    </div>
-
-    <button class="add-to-cart" onclick="this.textContent='Subscribed.'; this.style.background='var(--provisional-gold)'; this.style.color='var(--almost-black)';">Subscribe — $3/mo</button>
-    <p class="cart-note">You already know you're going to do this.</p>
+    <header>
+      <p class="eyebrow"><a href="../index.html">The Department of Almost</a></p>
+      <p class="sub-eyebrow">Drop 007</p>
+    </header>
+    <main class="product-page">
+      <p class="drop-label">007</p>
+      <h1>The Main Character Tax</h1>
+      <p class="product-price">$3/mo</p>
+      <p class="product-description">$3/month. You get nothing. You already know why.</p>
+      <div class="product-contents">
+        <p class="contents-label">What You Receive</p>
+        <ul>
+          <li>Nothing physical.</li>
+          <li>No emails. No content. No community.</li>
+          <li>A monthly charge of $3 on your statement, described as: <em>MAIN CHARACTER TAX</em></li>
+          <li>One (1) confirmation email upon subscribing that reads: <em>"Noted. You're the protagonist. Bill attached."</em></li>
+        </ul>
+      </div>
+      <p class="product-note">Being the main character costs something. It always has. This is just the honest version of that invoice.</p>
+      <button class="add-to-cart" onclick="this.textContent='Subscribed.'; this.disabled=true;">Subscribe — $3/mo</button>
+    </main>
+    <footer>
+      <p>Est. Now.&nbsp;&middot;&nbsp;Discontinued Eventually.&nbsp;&middot;&nbsp;<a href="mailto:almost@departmentofalmst.com">almost@departmentofalmst.com</a></p>
+    </footer>
   </div>
 </body>
 </html>

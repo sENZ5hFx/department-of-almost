@@ -3,34 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Drop 005 — The Roman Empire</title>
+  <title>005 — The Roman Empire | The Department of Almost</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
   <div class="container">
-    <a href="../index.html" class="nav-back">&larr; All Products</a>
-    <span class="drop-label">Drop 005</span>
-    <h1 class="product-title">The Roman Empire</h1>
-    <p class="product-tagline">The thing you think about more than you'd admit.</p>
-
-    <div class="product-body">
-      <p>A blank journal. 192 pages. Heavyweight cream paper. A ribbon bookmark.</p>
-      <p>The cover says one thing in gold Playfair Display serif:</p>
-      <p style="font-family: 'Playfair Display', serif; font-size: 22px; letter-spacing: 0.05em; color: var(--provisional-gold); margin: 32px 0;">MY ROMAN EMPIRE</p>
-      <p>No prompts. No structure. No guidance. You know what goes in here. You've always known.</p>
-    </div>
-
-    <div class="product-meta">
-      <div class="meta-row"><span class="meta-label">Price</span><span class="meta-value">$38</span></div>
-      <div class="meta-row"><span class="meta-label">Pages</span><span class="meta-value">192, unlined</span></div>
-      <div class="meta-row"><span class="meta-label">Cover</span><span class="meta-value">Matte black, gold foil title</span></div>
-      <div class="meta-row"><span class="meta-label">Prompts</span><span class="meta-value">None. You have enough.</span></div>
-    </div>
-
-    <button class="add-to-cart" onclick="this.textContent='Added.'; this.style.background='var(--provisional-gold)'; this.style.color='var(--almost-black)';">Add to Cart</button>
-    <p class="cart-note">You've been meaning to write this down.</p>
+    <header>
+      <p class="eyebrow"><a href="../index.html">The Department of Almost</a></p>
+      <p class="sub-eyebrow">Drop 005</p>
+    </header>
+    <main class="product-page">
+      <p class="drop-label">005</p>
+      <h1>The Roman Empire</h1>
+      <p class="product-price">$38</p>
+      <p class="product-description">The thing you think about more than you'd admit.</p>
+      <div class="product-contents">
+        <p class="contents-label">What's Inside</p>
+        <ul>
+          <li>One (1) small bronze coin, antiqued finish.</li>
+          <li>One side: a laurel wreath. Other side: blank. Intentionally.</li>
+          <li>One (1) card: <em>"You don't have to explain it. You just think about it. That's enough."</em></li>
+          <li>Arrives in a velvet pouch, cinched in black.</li>
+        </ul>
+      </div>
+      <p class="product-note">We all have one. The thing that keeps coming back. The thought that has no reason to visit but does anyway. This is for that.</p>
+      <button class="add-to-cart" onclick="this.textContent='Added.'; this.disabled=true;">Add to Cart — $38</button>
+    </main>
+    <footer>
+      <p>Est. Now.&nbsp;&middot;&nbsp;Discontinued Eventually.&nbsp;&middot;&nbsp;<a href="mailto:almost@departmentofalmst.com">almost@departmentofalmst.com</a></p>
+    </footer>
   </div>
 </body>
 </html>
